@@ -1,6 +1,6 @@
-mp2 <- function(){
-  
+
   ## This first line will likely take a few seconds. Be patient!
+  ##loading raw data into memory
   NEI <- readRDS("summarySCC_PM25.rds")
   SCC <- readRDS("Source_Classification_Code.rds")
   
@@ -26,4 +26,3 @@ mp2 <- function(){
        pch=20, cex=5, main="Total PM25 Emissions in Baltimore by Year")
   dev.off()
   
-}

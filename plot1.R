@@ -1,6 +1,5 @@
-mp1 <- function(){
-  
   ## This first line will likely take a few seconds. Be patient!
+  ##loading raw data into memory
   NEI <- readRDS("summarySCC_PM25.rds")
   SCC <- readRDS("Source_Classification_Code.rds")
   
@@ -19,10 +18,8 @@ mp1 <- function(){
   myYearsVector <- c(1999,2002,2005,2008)
   myEmissionsVector <- c(totalPM25In99, totalPM25In02, totalPM25In05, totalPM25In08)
   
+  #Creating and labelling the 1st plot
   png('plot1.png')
   plot(myYearsVector, myEmissionsVector, xlab="Year", ylab="Total Emissions", 
        pch=20, cex=5, main="Total PM25 Emissions From All Sources by Year")
   dev.off()
-  #View(myTotalEmissionsByYear)
-  
-}
