@@ -19,7 +19,7 @@ mp1 <- function(){
   myYearsVector <- c(1999,2002,2005,2008)
   myEmissionsVector <- c(totalPM25In99, totalPM25In02, totalPM25In05, totalPM25In08)
   
-  png('plo1.png')
+  png('plot1.png')
   plot(myYearsVector, myEmissionsVector, xlab="Year", ylab="Total Emissions", pch=20, main="Total PM25 Emissions From All Sources by Year")
   dev.off()
   #View(myTotalEmissionsByYear)
