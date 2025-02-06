@@ -1,5 +1,4 @@
-mp4 <- function(){
-  
+
   ## This first line will likely take a few seconds. Be patient!
   ##loading raw data into memory
   NEI <- readRDS("summarySCC_PM25.rds")
@@ -30,4 +29,3 @@ mp4 <- function(){
   plot(myYearsVector, myEmissionsVector, xlab="Year", ylab="Total Coal Combustion Emissions", 
        pch=20, cex=2.5, main="Total Emissions From Coal Combustion Related Sources by Year")
   dev.off()
-}
